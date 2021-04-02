@@ -1,0 +1,374 @@
+.header 
+	min-height: 800px
+	background: url('../img/bg.jpg') center center/cover no-repeat
+
+h1, h2, h3, h4, h5, h6, p,
+	margin: 0
+	padding: 0
+
+li
+	list-style-type: none
+
+ul
+	margin: 0
+	padding-inline-start: 0
+
+.container
+	width: 1140px
+	margin: 0 auto
+	padding: 0 15px
+
+.nav
+	border-bottom: 1px solid #a1a1a181
+
+.hamburger
+    display: none
+
+.menu
+	display: flex
+	list-style-type: none
+	justify-content: flex-end
+	margin: 0
+	&_item
+		padding: 40px 20px
+		&:last-child
+			padding-right: 0
+	&_link
+		position: relative
+		font-weight: 500
+		font-size: 16px
+		color: #FFFFFF
+		text-decoration: none
+		transition: .3s color
+		&:hover
+			color: #bdbdbd
+
+
+.promo
+	text-align: center
+	&_suptitle
+		margin-top: 220px
+		font-weight: 500
+		font-size: 16px
+		color: #FFFFFF
+	&_title
+		font-weight: 800
+		font-size: 48px
+		line-height: 64px
+		color: #FFFFFF
+		margin: 20px 70px 0 70px
+		
+	&_btn
+		@include btn
+		margin: 50px 0 335px 0 
+
+.services
+	padding: 110px 0 105px 0
+	&_title
+		@include title
+		padding: 0 200px
+		text-align: center
+	&_descr
+		@include descr
+		padding: 0 205px
+		text-align: center
+		margin-top: 50px
+	&_items
+		display: flex
+		justify-content: space-between
+		margin-top: 70px
+	&_item
+		width: 32%
+		display: flex
+		&_circle
+			position: relative
+			border-radius: 50%
+			border: 1px solid #E0E0E0
+			background: #ffffff
+			width: 80px
+			height: 80px
+			display: flex
+			justify-content: center
+			&::before
+				content: ''
+				display: block
+				border-radius: 50%
+				border: 1px solid #4985FF
+				background: #ffffff
+				width: 80%
+				height: 80%
+				align-self: center
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 35px
+				height: 35px
+		&_text
+			width: 222px
+			margin-left: 15px
+			margin-top: 33px
+		&_subtitle
+			font-weight: 600
+			font-size: 18px
+			color: #000000
+		&_descr
+			margin-top: 12px
+			font-weight: 400
+			font-size: 14px
+			line-height: 22px
+			color: #999999
+	&_btn
+		@include btn
+		display: block
+		margin: 55px auto 0
+	
+.about
+	background-color: #F6F6F8
+	padding: 100px 0 70px 0
+	&_item
+		display: flex
+		align-items: center
+		padding-bottom: 85px
+		border-bottom: 1px solid $lightgray-color
+		&_text
+			padding-right: 115px
+		&_title
+			color: $black-color
+			font-weight: 700
+			font-size: 36px
+			line-height: 53px
+		&_descr
+			margin-top: 40px
+			color: $grey-color
+			font-weight: 400
+			font-size: 16px
+			line-height: 25px
+		
+		&_link
+			display: block
+			margin-top: 30px
+			color: $blue-color
+			font-weight: 500
+			font-size: 16px
+			line-height: 20px
+			text-decoration-line: underline
+	&_calendar
+		padding: 70px 80px 0 80px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_item
+			width: 124px
+			justify-content: center
+			text-align: center
+			&:first-child
+				margin-left: 0
+			&_in
+				display: flex
+				justify-content: center
+		&_number
+			margin-left: 20px
+			color: #000000
+			font-weight: 400
+			font-size: 36px
+		&_text
+			color: $grey-color
+			margin-top: 15px
+			font-weight: 400
+			font-size: 16px
+			line-height: 15px
+.works
+	position: relative
+	min-height: 910px
+	padding-top: 85px
+	&_wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&_title
+			@include title
+			color: #FFFFFF
+		&_btn
+			@include btn
+	
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		margin-top: 70px
+		border-bottom: 1px solid $lightgray-color
+	&_item
+		width: 350px
+		&_title
+			margin-top: 30px
+			font-weight: 600
+			font-size: 18px
+			span
+				color: $blue-color
+		&_descr
+			margin-top: 30px
+			font-weight: 400
+			font-size: 16px
+			line-height: 25px
+			color: $grey-color
+		&_link
+			display: block
+			margin-top: 30px
+			margin-bottom: 85px
+			font-weight: 500
+			font-size: 16px
+			line-height: 20px
+			text-decoration-line: underline
+			color: $blue-color
+
+
+.blue
+	position: absolute
+	top: 0
+	left: 0
+	height: 490px
+	width: 100%
+	background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+	z-index: -1
+
+.projects
+	padding: 100px 0 130px 
+	background-color: #F6F6F8
+	&_title
+		@include title
+		text-align: center
+
+	&_descr
+		@include descr
+		text-align: center
+		margin: 40px 205px 0 205px
+	&_wrap
+		display: flex
+		justify-content: space-between
+		margin-top: 70px
+	&_img
+		width: 255px
+		height: 255px
+	&_btn
+		@include btn
+		display: block
+		margin: 63px auto 0
+
+.video
+	min-height: 735px
+	position: relative
+	padding-top: 70px
+	&_bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 570px
+		background: url('../img/bg_video.jpg') center center/cover no-repeat
+		z-index: -1
+	&_title
+		@include title
+		color: #FFFFFF
+		text-align: center
+	&_descr
+		@include descr
+		margin-top: 30px
+		color: #FFFFFF
+		text-align: center
+	&_wrap
+		position: relative
+		margin: 70px auto 0
+	&_img
+		display: block
+		margin: 0 auto
+.oval
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 300px
+	height: 100px
+	border: 1px solid #FFFFFF
+	border-radius: 100px
+	transition: .4s background-color
+	&:hover
+		background-color: #4986ff54
+	&_text
+		margin-left: 21px
+		font-weight: 500
+		font-size: 16px
+		color: #FFFFFF
+
+.footer
+	min-height: 413px
+	background-color: #F6F6F8
+	padding-top: 70px
+	&_wrapper
+		display: flex
+		justify-content: space-between
+		padding-bottom: 70px
+		border-bottom: 1px solid $lightgray-color
+	&_item
+		width: 25%
+		&_title
+			font-weight: 600
+			font-size: 18px
+			color: #000000
+		&_list
+			margin-top: 35px
+			margin-bottom: 0
+			li
+				display: flex
+				margin-top: 30px
+				font-weight: normal
+				font-size: 14px
+				line-height: 22px
+				&:first-child
+					margin-top: 0
+				.wrap_contacts
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 20px
+					height: 24px
+					span
+						font-size: 18px
+						color: $grey-color
+					&_link
+						margin-left: 15px
+						text-decoration: none
+						color: $grey-color
+			&_li
+				padding-left: 22px
+				position: relative
+				&::before
+					content: ""
+					position: absolute
+					top: 27%
+					left: 5px
+					transform: rotate(-45deg)
+					width: 1px
+					height: 7px
+					background-color: $grey-color
+				&::after
+					content: ""
+					position: absolute
+					left: 5px
+					top: 48%
+					transform: rotate(45deg)
+					width: 1px
+					height: 7px
+					background-color: $grey-color
+				a
+					text-decoration: none
+					color: $grey-color
+.copyright
+	margin-top: 40px
+	text-align: center
+	font-weight: 400
+	font-size: 13px
+	color: $grey-color

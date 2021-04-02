@@ -1,0 +1,58 @@
+/*
+Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 3 of W:/Web Development/projects/templates/sass/_mixins.sass
+        from line 5 of W:\Web Development\projects\templates\sass\style.sass
+
+1: @mixin title
+2:     font-weight: 700
+3: 	font-size: 36px
+4: 	line-height: 53px
+5: 	color: $black-color
+
+Backtrace:
+W:/Web Development/projects/templates/sass/_mixins.sass:3
+W:\Web Development\projects\templates\sass\style.sass:5
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:494:in `block in tabulate'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each_with_index'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `tabulate'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:417:in `_to_tree'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+W:/Programms/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+W:/Programms/Koala/bin/sass:22:in `load'
+W:/Programms/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 3 of W:/Web Development/projects/templates/sass/_mixins.sass\A         from line 5 of W:\Web Development\projects\templates\sass\style.sass\A \A 1: @mixin title\A 2:     font-weight: 700\A 3: 	font-size: 36px\A 4: 	line-height: 53px\A 5: 	color: $black-color"; }
